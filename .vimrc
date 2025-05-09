@@ -4,7 +4,7 @@ syntax on
 
 "colorscheme molokai
 "colorscheme solarized
-colorscheme gge
+"colorscheme gge
 
 "adjust colors for xterm-256color
 hi Statement ctermfg=180 cterm=NONE
@@ -12,6 +12,8 @@ hi Search term=reverse ctermfg=0 ctermbg=3
 hi DiffChange ctermbg=5
 hi DiffText term=reverse cterm=bold ctermbg=1
 hi DiffAdd term=bold ctermbg=1 guibg=LightBlue
+hi LineNr ctermfg=DarkGrey
+hi Folded ctermbg=253 ctermfg=Black
 set t_ut=
 
 "don't do scoll bind (sync)
