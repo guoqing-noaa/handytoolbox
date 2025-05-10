@@ -1,8 +1,8 @@
 #!/bin/bash
-
-srcdir=$(pwd)
+srcdir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 seconds=$(date +%s)
 
+set -x
 cd ${HOME}
 mkdir -p backup_bash_${seconds}
 mv .bash_profile   backup_bash_${seconds}
