@@ -1,0 +1,5 @@
+Host * !h?c? !h??c?? !*github.com
+    ServerAliveInterval 60
+    ControlMaster auto
+    ControlPath ~/.ssh/master-%r@%h:%p
+    ControlPersist yes
