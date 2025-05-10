@@ -47,12 +47,15 @@ alias pwd="pwd -L"
 alias cp="cp -i"
 alias resource='source ~/.bashrc'
 alias ta='tmux a'
-alias mll="module list"
+###alias mll="module list" # system already has 'ml' -by Gonzalo
 alias ll='ls -l'
+alias dp='echo $DISPLAY'
+alias d='display'
 alias rehash='hash -r'
 alias jupyter8800='jupyter lab --no-browser --port=8800'
 
 # Setting up favorite functions which can run as a command 
+dp.set(){ export DISPLAY=localhost:${1}.0;} # set DISPLAY for launching X11 windows inside tmux
 scp2j(){ scp -rp "$1" Guoqing.Ge@dtn-jet.boulder.rdhpcs.noaa.gov:"$2";}
 scp4j(){ scp -rp      Guoqing.Ge@dtn-jet.boulder.rdhpcs.noaa.gov:"$1" "$2";}
 scp2h(){ scp -rp "$1" Guoqing.Ge@dtn-hera.fairmont.rdhpcs.noaa.gov:"$2";}
