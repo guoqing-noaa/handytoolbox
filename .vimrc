@@ -70,6 +70,8 @@ let mapleader=","       " leader is comma
 nnoremap <leader><space> :nohlsearch<CR>
 "toggle line number
 nnoremap <leader>n :set invnumber<CR>
+nnoremap <PageUp> <C-u>
+nnoremap <PageDown> <C-d>
 
 " Python specific settings
 autocmd FileType python setlocal expandtab   " Use spaces instead of tabs
